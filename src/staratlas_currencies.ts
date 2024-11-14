@@ -1,7 +1,7 @@
 import { ITokenList } from "./types/ITokenList";
 
 const tokenList: ITokenList = {
-  name: "Base Token List",
+  name: "StarAtlas Currencies",
   logoURI: "",
   keywords: ["solana", "spl", "sa"],
   tags: {
@@ -95,6 +95,6 @@ const tokenList: ITokenList = {
   ],
 };
 
-export function getBase(): ITokenList {
+export function getList(): ITokenList {
   return tokenList;
 }

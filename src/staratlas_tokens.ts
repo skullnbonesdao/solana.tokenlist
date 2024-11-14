@@ -5,7 +5,7 @@ import { fetchData } from "./fetch";
 const url = "https://galaxy.staratlas.com/nfts";
 
 let list: ITokenList = {
-  name: "StarAtlas Token List",
+  name: "StarAtlas Tokens",
   logoURI: "",
   keywords: ["solana", "spl", "sa"],
   tags: {
@@ -18,7 +18,7 @@ let list: ITokenList = {
   tokens: [],
 };
 
-export async function getStarAtlas(): Promise<ITokenList> {
+export async function getList(): Promise<ITokenList> {
   await fetchData(url).then((json: any) => {
     json
       .filter((element: any) => element.attributes.itemType != "currency")
